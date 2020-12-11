@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>my first website.</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: teal;
+      }
+      @media screen and (max-width: 600px) {
+        div {
+          background-color: tomato;
+        }
+      }
+      @media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+        div {
+          background-color: wheat;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        div {
+          background-color: turquoise;
+        }
+      }
+      span {
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: tomato;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>please flip your phone</span>
+  </body>
+</html>
