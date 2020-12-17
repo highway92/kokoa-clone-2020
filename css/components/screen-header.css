@@ -14,4 +14,20 @@
 
 .screen-header__icons span {
   margin-left: 25px;
+  display: inline-block;
+}
+.screen-header-cog__dot {
+  position: relative;
+}
+
+@keyframes rotatecog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icons .fa-cog:hover {
+  animation: rotatecog 1s linear infinite;
 }
